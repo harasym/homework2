@@ -5,9 +5,10 @@
     <classes>
       <class name="academy.softserve.tests.GoogleSearchTest">
         <methods>
-          <include name="teardown"/>
+          <include name="setUpDriver"/>
+          <include name="tearDown"/>
           <include name="test_search_funny_images"/>
-          <include name="setup"/>
+          <include name="turnOffGoogleLiveSearch"/>
         </methods>
       </class> <!-- academy.softserve.tests.GoogleSearchTest -->
     </classes>

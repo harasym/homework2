@@ -1,13 +1,14 @@
 package academy.softserve.pages;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 
 public class GoogleSearchPage {
 
     WebDriver driver;
+
     By searchField = By.id("lst-ib");
     By searchButton = By.xpath(".//*[@id='tsf']/div[2]/div[3]/center/input[1]");
     By randomSearchButton = By.xpath(".//*[@id='tsf']//input[2]");
@@ -28,7 +29,14 @@ public class GoogleSearchPage {
         return driver.findElement(searchButton);
     }
 
-    // Input search request in searchfield
+    // get google start page
+    public GoogleSearchPage getGoogleStartPage() {
+        driver.get("http://google.com.ua");
+        return new GoogleSearchPage(driver);
+
+    }
+
+    // Input search request in search field
 
     public void setSerachRequest(String searchRequest) {
         driver.findElement(searchField).sendKeys(searchRequest);
@@ -38,9 +46,7 @@ public class GoogleSearchPage {
     // Click on search button
 
     public void clickSearch() {
-        Actions builder = new Actions(driver);
-        builder.moveToElement(gerSearchButton()).doubleClick().build().perform();
-
+        driver.findElement(searchButton).click();
 
     }
 
@@ -52,14 +58,16 @@ public class GoogleSearchPage {
     }
 
     // get all search results
-
-    public SearchResultPage googleSearch(String searchRequest) throws InterruptedException {
-        this.setSerachRequest(searchRequest);
+    
+    public void freeClick (){
         getLogo().click();
-        Thread.sleep(1500);
+    }
+
+    public SearchResultPage googleSearch(String searchRequest) {
+        setSerachRequest(searchRequest);
+        freeClick();
         clickSearch();
         return new SearchResultPage(driver);
-
     }
 
     // get one random search results

@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11222" started-at="2016-11-23T12:10:15Z" finished-at="2016-11-23T12:10:26Z">
+  <suite name="Default suite" duration-ms="22730" started-at="2016-11-24T21:39:46Z" finished-at="2016-11-24T21:40:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11222" started-at="2016-11-23T12:10:15Z" finished-at="2016-11-23T12:10:26Z">
+    <test name="Default test" duration-ms="22730" started-at="2016-11-24T21:39:46Z" finished-at="2016-11-24T21:40:09Z">
       <class name="academy.softserve.tests.GoogleSearchTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:academy.softserve.tests.GoogleSearchTest@5a39699c]" name="setup" is-config="true" duration-ms="6135" started-at="2016-11-23T14:10:15Z" finished-at="2016-11-23T14:10:21Z">
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:academy.softserve.tests.GoogleSearchTest@2752f6e2]" name="setUpDriver" is-config="true" duration-ms="8055" started-at="2016-11-24T23:39:47Z" finished-at="2016-11-24T23:39:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="test_Google_Page()[pri:0, instance:academy.softserve.tests.GoogleSearchTest@5a39699c]" name="test_Google_Page" duration-ms="168" started-at="2016-11-23T14:10:21Z" finished-at="2016-11-23T14:10:21Z">
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="turnOffGoogleLiveSearch()[pri:0, instance:academy.softserve.tests.GoogleSearchTest@2752f6e2]" name="turnOffGoogleLiveSearch" is-config="true" duration-ms="5604" started-at="2016-11-24T23:39:55Z" finished-at="2016-11-24T23:40:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_Google_Page -->
-        <test-method status="PASS" signature="test_search_funny_images()[pri:0, instance:academy.softserve.tests.GoogleSearchTest@5a39699c]" name="test_search_funny_images" duration-ms="3797" started-at="2016-11-23T14:10:21Z" finished-at="2016-11-23T14:10:25Z">
+        </test-method> <!-- turnOffGoogleLiveSearch -->
+        <test-method status="PASS" signature="test_change_link_color()[pri:0, instance:academy.softserve.tests.GoogleSearchTest@2752f6e2]" name="test_change_link_color" duration-ms="5391" started-at="2016-11-24T23:40:00Z" finished-at="2016-11-24T23:40:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_search_funny_images -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:academy.softserve.tests.GoogleSearchTest@5a39699c]" name="teardown" is-config="true" duration-ms="1100" started-at="2016-11-23T14:10:25Z" finished-at="2016-11-23T14:10:26Z">
+        </test-method> <!-- test_change_link_color -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:academy.softserve.tests.GoogleSearchTest@2752f6e2]" name="tearDown" is-config="true" duration-ms="3564" started-at="2016-11-24T23:40:06Z" finished-at="2016-11-24T23:40:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
+        </test-method> <!-- tearDown -->
       </class> <!-- academy.softserve.tests.GoogleSearchTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
